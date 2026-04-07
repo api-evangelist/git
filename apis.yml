@@ -1,6 +1,8 @@
 aid: git
 name: Git
-description: Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
+description: Git is a distributed version control system for tracking changes in
+  source code during software development. It is designed for coordinating work 
+  among programmers, but it can be used to track changes in any set of files.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -19,7 +21,8 @@ tags:
 apis:
   - aid: git:git-cli
     name: Git CLI
-    description: Git command-line interface for version control operations
+    description: >-
+      Git command-line interface for version control operations.
     humanURL: https://git-scm.com/docs
     tags:
       - Version Control
@@ -30,7 +33,8 @@ apis:
         url: https://git-scm.com/docs
   - aid: git:github
     name: GitHub API
-    description: RESTful API for GitHub's Git hosting platform
+    description: >-
+      RESTful API for GitHub's Git hosting platform.
     humanURL: https://docs.github.com/en/rest
     baseURL: https://api.github.com
     tags:
@@ -45,7 +49,8 @@ apis:
         url: https://docs.github.com/en/rest/authentication
   - aid: git:gitlab
     name: GitLab API
-    description: RESTful API for GitLab's Git repository management
+    description: >-
+      RESTful API for GitLab's Git repository management.
     humanURL: https://docs.gitlab.com/ee/api/
     baseURL: https://gitlab.com/api/v4
     tags:

@@ -1,8 +1,6 @@
 aid: git
 name: Git
-description: Git is a distributed version control system for tracking changes in
-  source code during software development. It is designed for coordinating work 
-  among programmers, but it can be used to track changes in any set of files.
+description: Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -13,11 +11,11 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/git/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 tags:
-  - Version Control
-  - Git
-  - Source Code Management
   - Distributed
+  - Git
   - Open Source
+  - Source Code Management
+  - Version Control
 apis:
   - aid: git:git-cli
     name: Git CLI
@@ -38,8 +36,8 @@ apis:
     humanURL: https://docs.github.com/en/rest
     baseURL: https://api.github.com
     tags:
-      - GitHub
       - Git
+      - GitHub
     properties:
       - type: Documentation
         url: https://docs.github.com/en/rest
@@ -54,8 +52,8 @@ apis:
     humanURL: https://docs.gitlab.com/ee/api/
     baseURL: https://gitlab.com/api/v4
     tags:
-      - GitLab
       - Git
+      - GitLab
     properties:
       - type: Documentation
         url: https://docs.gitlab.com/ee/api/

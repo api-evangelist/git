@@ -1,46 +1,42 @@
 # Git (git)
+
 Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
 
-**URL:** [Visit APIs.json URL](https://git-scm.com)
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/git/refs/heads/main/apis.yml)
 
 ## Tags:
 
- - version control, git, source code management, distributed, open source
+ - Distributed, Git, Open Source, Source Code Management, Version Control
 
 ## Timestamps
 
-- **Created:** 2024 
-- **Modified:** 2024 
+- **Created:** 2024-01-01
+- **Modified:** 2026-04-28
 
 ## APIs
 
 ### Git CLI
-Git command-line interface for version control operations
+Git command-line interface for version control operations.
 
 **Human URL:** [https://git-scm.com/docs](https://git-scm.com/docs)
 
-
 #### Tags:
 
- - version control, source code, distributed, repositories
+ - Version Control
 
 #### Properties
 
 - [Documentation](https://git-scm.com/doc)
 - [Reference](https://git-scm.com/docs)
-- [Book](https://git-scm.com/book/en/v2)
-- [Videos](https://git-scm.com/videos)
-- [Downloads](https://git-scm.com/downloads)
 
 ### GitHub API
-RESTful API for GitHub's Git hosting platform
+RESTful API for GitHub's Git hosting platform.
 
 **Human URL:** [https://docs.github.com/en/rest](https://docs.github.com/en/rest)
 
-
 #### Tags:
 
- - github, git, repositories, collaboration, REST
+ - Git, GitHub
 
 #### Properties
 
@@ -49,14 +45,13 @@ RESTful API for GitHub's Git hosting platform
 - [Authentication](https://docs.github.com/en/rest/authentication)
 
 ### GitLab API
-RESTful API for GitLab's Git repository management
+RESTful API for GitLab's Git repository management.
 
 **Human URL:** [https://docs.gitlab.com/ee/api/](https://docs.gitlab.com/ee/api/)
 
-
 #### Tags:
 
- - gitlab, git, repositories, ci/cd, REST
+ - Git, GitLab
 
 #### Properties
 
@@ -65,22 +60,26 @@ RESTful API for GitLab's Git repository management
 - [Authentication](https://docs.gitlab.com/ee/api/rest/index.html#authentication)
 
 ### Gitea API
-RESTful API for Gitea's self-hosted Git service
+RESTful API for Gitea's self-hosted Git service.
 
 **Human URL:** [https://docs.gitea.io/en-us/api-usage/](https://docs.gitea.io/en-us/api-usage/)
 
-
 #### Tags:
 
- - gitea, git, self-hosted, repositories, REST
+ - Git, Gitea, Self-hosted
 
 #### Properties
 
 - [Documentation](https://docs.gitea.io/en-us/api-usage/)
 - [OpenAPI](https://gitea.io/api/swagger)
 
+## Common Properties
+
+- [Website](https://git-scm.com/)
+- [Documentation](https://git-scm.com/doc)
+
 ## Maintainers
 
-**FN:** Git Community
+**FN:** Kin Lane
 
-**Email:** git@vger.kernel.org
+**Email:** kin@apievangelist.com

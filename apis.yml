@@ -5,7 +5,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-01-01'
-modified: '2026-03-16'
+modified: '2026-04-28'
 position: Consumer
 url: >-
   https://raw.githubusercontent.com/api-evangelist/git/refs/heads/main/apis.yml
@@ -61,6 +61,20 @@ apis:
         url: https://docs.gitlab.com/ee/api/openapi/openapi.yaml
       - type: Authentication
         url: https://docs.gitlab.com/ee/api/rest/index.html#authentication
+  - aid: git:gitea
+    name: Gitea API
+    description: >-
+      RESTful API for Gitea's self-hosted Git service.
+    humanURL: https://docs.gitea.io/en-us/api-usage/
+    tags:
+      - Git
+      - Gitea
+      - Self-hosted
+    properties:
+      - type: Documentation
+        url: https://docs.gitea.io/en-us/api-usage/
+      - type: OpenAPI
+        url: https://gitea.io/api/swagger
 common:
   - type: Website
     url: https://git-scm.com/

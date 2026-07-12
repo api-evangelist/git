@@ -1,0 +1,39 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: git-scm.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 22 09:00:38 2026 GMT
+  hsts: false
+- host: docs.gitlab.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 18 12:39:50 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: gitlab.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 10 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: git-scm.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+- domain: gitlab.com
+  dnssec: false
+  caa:
+  - 0 issue "pki.goog; cansignhttpexchanges=yes"
+  - 0 issue "sectigo.com"
+  - 0 issue "ssl.com"
+  - 0 issuewild "comodoca.com"
+  - 0 issuewild "digicert.com; cansignhttpexchanges=yes"
+  - 0 issuewild "letsencrypt.org"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

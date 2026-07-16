@@ -1,0 +1,36 @@
+generated: '2026-06-20'
+method: searched
+source: /.well-known/ discovery documents + provider security/auth docs
+note: >-
+  Cross-cutting standards asserted per Git platform, evidenced by live discovery
+  documents captured under well-known/. This is an Index repo, so conformance is
+  tracked per provider rather than for a single API.
+standards:
+  - id: rfc9116-security-txt
+    conforms: true
+    providers: [GitHub, GitLab, Gitea]
+    evidence: /.well-known/security.txt returns 200 on github.com, gitlab.com, gitea.com
+  - id: oidc-discovery
+    conforms: true
+    providers: [GitLab, Gitea, GitHub Actions]
+    evidence: >-
+      /.well-known/openid-configuration returns 200 on gitlab.com, gitea.com,
+      and token.actions.githubusercontent.com (Actions OIDC provider)
+  - id: rfc8414-oauth-authorization-server
+    conforms: true
+    providers: [GitLab]
+    evidence: /.well-known/oauth-authorization-server returns 200 on gitlab.com
+  - id: oauth2
+    conforms: true
+    providers: [GitHub, GitLab, Gitea]
+    evidence: >-
+      All three platforms document OAuth2 authorization for their REST APIs;
+      GitLab and Gitea additionally expose OIDC provider metadata.
+  - id: rest
+    conforms: true
+    providers: [GitHub, GitLab, Gitea]
+    evidence: GitHub REST, GitLab v4 REST, and Gitea REST APIs
+  - id: graphql
+    conforms: true
+    providers: [GitHub, GitLab]
+    evidence: GitHub GraphQL API v4 and GitLab GraphQL API

@@ -1,0 +1,35 @@
+generated: '2026-06-20'
+method: searched
+probe: true
+source: GitHub + GitLab public trust centers
+trust_centers:
+  - provider: GitHub
+    url: https://ghec.github.trust.page/
+    certifications:
+      - ISO/IEC 27001:2013
+      - ISO/IEC 42001:2023
+      - CSA STAR Level 2
+      - SOC 1 Type 2
+      - SOC 2 Type 2
+      - SOC 3
+      - TISAX
+      - FedRAMP LI-SaaS
+    notes: >-
+      GitHub Enterprise Cloud with data residency is pursuing FedRAMP Moderate.
+      Copilot maintains a separate trust center at https://copilot.github.trust.page/.
+    evidence:
+      - {source: https://ghec.github.trust.page/, keywords: [soc 2, iso 27001, iso 42001, csa star, trust center]}
+  - provider: GitLab
+    url: https://trust.gitlab.com/
+    certifications:
+      - SOC 2 Type 2
+      - SOC 3
+      - ISO/IEC 27001:2022
+      - ISO/IEC 27017
+      - ISO/IEC 27018
+      - ISO/IEC 42001
+    notes: >-
+      Covers both GitLab.com and GitLab Dedicated. Trust center powered by
+      SafeBase; certificates available in multiple languages.
+    evidence:
+      - {source: https://trust.gitlab.com/, keywords: [soc 2, iso 27001, iso 27017, iso 27018, iso 42001]}

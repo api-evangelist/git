@@ -1,0 +1,59 @@
+generated: '2026-06-20'
+method: searched
+source: npm, RubyGems, pkg.go.dev, PyPI + provider SDK docs
+note: >-
+  This is an Index repo spanning multiple Git platforms. Packages are grouped by
+  provider. `official: true` marks libraries maintained by the platform vendor;
+  GitLab's documented REST clients are community-maintained (official: false).
+packages:
+  # --- GitHub (Octokit, GitHub-maintained) ---
+  - provider: GitHub
+    language: javascript
+    registry: npm
+    name: "@octokit/rest"
+    url: https://www.npmjs.com/package/@octokit/rest
+    install: npm install @octokit/rest
+    repo: https://github.com/octokit/octokit.js
+    official: true
+  - provider: GitHub
+    language: ruby
+    registry: rubygems
+    name: octokit
+    url: https://rubygems.org/gems/octokit
+    install: gem install octokit
+    repo: https://github.com/octokit/octokit.rb
+    official: true
+  - provider: GitHub
+    language: dotnet
+    registry: nuget
+    name: Octokit
+    url: https://www.nuget.org/packages/Octokit/
+    install: dotnet add package Octokit
+    repo: https://github.com/octokit/octokit.net
+    official: true
+  # --- Gitea (Go SDK, Gitea-maintained) ---
+  - provider: Gitea
+    language: go
+    registry: pkg.go.dev
+    name: code.gitea.io/sdk/gitea
+    url: https://pkg.go.dev/code.gitea.io/sdk/gitea
+    install: go get code.gitea.io/sdk/gitea
+    repo: https://gitea.com/gitea/go-sdk
+    official: true
+  # --- GitLab (community-maintained, documented as third-party clients) ---
+  - provider: GitLab
+    language: python
+    registry: pypi
+    name: python-gitlab
+    url: https://pypi.org/project/python-gitlab/
+    install: pip install python-gitlab
+    repo: https://github.com/python-gitlab/python-gitlab
+    official: false
+  - provider: GitLab
+    language: javascript
+    registry: npm
+    name: "@gitbeaker/rest"
+    url: https://www.npmjs.com/package/@gitbeaker/rest
+    install: npm install @gitbeaker/rest
+    repo: https://github.com/jdalrymple/gitbeaker
+    official: false

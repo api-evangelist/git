@@ -1,0 +1,40 @@
+generated: '2026-06-20'
+method: searched
+source: live probes of /.well-known/ on Git-platform hosts (github.com, gitlab.com, gitea.com, token.actions.githubusercontent.com)
+hosts:
+  - host: https://github.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: git-github-security.txt
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://token.actions.githubusercontent.com
+    note: GitHub Actions OIDC provider (workload identity federation)
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: git-github-actions-openid-configuration.json
+  - host: https://gitlab.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: git-gitlab-security.txt
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: git-gitlab-openid-configuration.json
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        file: git-gitlab-oauth-authorization-server.json
+  - host: https://gitea.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: git-gitea-security.txt
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: git-gitea-openid-configuration.json

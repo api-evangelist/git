@@ -21,7 +21,7 @@ modified: '2026-06-20'
 position: Consumer
 url: >-
   https://raw.githubusercontent.com/api-evangelist/git/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 tags:
   - Distributed
   - Git

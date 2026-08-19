@@ -3,24 +3,31 @@ method: searched
 status: published
 source: https://github.com/github/github-mcp-server + https://docs.gitlab.com/user/model_context_protocol/mcp_server/
 servers:
-  - name: github
-    provider: GitHub
-    transport: http
-    url: https://api.githubcopilot.com/mcp/
-    repo: https://github.com/github/github-mcp-server
-    auth: [oauth, pat]
-    notes: >-
-      Official GitHub-maintained remote MCP server. OAuth (browser flow, token
-      in memory) is recommended for github.com; a Personal Access Token may be
-      passed as a Bearer token. A self-hostable stdio build is published in the
-      same repo.
-  - name: gitlab
-    provider: GitLab
-    transport: http
-    url: https://gitlab.com/api/v4/mcp
-    docs: https://docs.gitlab.com/user/model_context_protocol/mcp_server/
-    auth: [oauth, pat]
-    notes: >-
-      Official GitLab MCP server, exposed on the v4 API of any GitLab instance
-      (https://<instance>/api/v4/mcp). Introduced experimentally in GitLab 18.3,
-      promoted to Beta in 18.6.
+- name: github
+  provider: GitHub
+  transport: http
+  url: https://api.githubcopilot.com/mcp/
+  repo: https://github.com/github/github-mcp-server
+  auth:
+  - oauth
+  - pat
+  notes: Official GitHub-maintained remote MCP server. OAuth (browser flow, token in memory) is recommended
+    for github.com; a Personal Access Token may be passed as a Bearer token. A self-hostable stdio build
+    is published in the same repo.
+- name: gitlab
+  provider: GitLab
+  transport: http
+  url: https://gitlab.com/api/v4/mcp
+  docs: https://docs.gitlab.com/user/model_context_protocol/mcp_server/
+  auth:
+  - oauth
+  - pat
+  notes: Official GitLab MCP server, exposed on the v4 API of any GitLab instance (https://<instance>/api/v4/mcp).
+    Introduced experimentally in GitLab 18.3, promoted to Beta in 18.6.
+deployment:
+  mode: remote
+  endpoint: https://api.githubcopilot.com/mcp/
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census

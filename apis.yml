@@ -25,6 +25,12 @@ specificationVersion: '0.23'
 tags:
   - Distributed
   - Git
+  - Open-Source
+  - Source Code Management
+  - Version Control
+tags_raw:
+  - Distributed
+  - Git
   - Open Source
   - Source Code Management
   - Version Control
@@ -87,6 +93,10 @@ apis:
       RESTful API for Gitea's self-hosted Git service.
     humanURL: https://docs.gitea.io/en-us/api-usage/
     tags:
+      - Git
+      - Gitea
+      - Self-Hosted
+    tags_raw:
       - Git
       - Gitea
       - Self-hosted

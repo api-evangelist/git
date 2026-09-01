@@ -106,7 +106,7 @@ apis:
     tags:
       - Git
       - Gitea
-      - Self-hosted
+      - Self-Hosted
     tags_raw:
       - Git
       - Gitea

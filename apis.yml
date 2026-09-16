@@ -34,7 +34,6 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/git/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 tags:
-  - Developer Tools
   - Distributed
   - Git
   - Open-Source

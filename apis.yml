@@ -36,7 +36,7 @@ specificationVersion: '0.23'
 tags:
   - Distributed
   - Git
-  - Open-Source
+  - Open Source
   - Source Code Management
   - Version Control
 tags_raw:
@@ -45,6 +45,7 @@ tags_raw:
   - Open Source
   - Source Code Management
   - Version Control
+  - Open-Source
 apis:
   - aid: git:git-cli
     name: Git CLI
